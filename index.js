@@ -24,7 +24,6 @@ app.post('/', (req, res) => {
 	console.log('Received a post');
 })
 
-
 app.post('/location/:lat/:long', (req, res) =>  {
 	console.log("location: ", req.params);
 	var locRef = ref.child("location");
@@ -35,7 +34,7 @@ app.post('/location/:lat/:long', (req, res) =>  {
 	 0:
 	  {
 		lat: latVal,
-		long:longVal
+		longC:longVal
 	  }
 	});
 	res.send("location");
